@@ -15,7 +15,7 @@ describe ('scrabble_score') do
 
   it("Splits string into an all uppercase array") do
     word = Word.new("Abc")
-    expect(word.scrabble()).to(eq([1, 3, 3]))
+    expect(word.scrabble()).to(eq(7))
   end
 
 
