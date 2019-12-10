@@ -7,10 +7,14 @@ describe ('scrabble_score') do
 #     expect(word.scrabble()).to(eq(1))
 #   end
 
-  it("returns a string in all uppercase") do
+  # it("returns a string in all uppercase") do
+  #   word = Word.new("Abc")
+  #   expect(word.scrabble()).to(eq("ABC"))
+  # end
+
+  it("Splits string into an all uppercase array") do
     word = Word.new("Abc")
-    expect(word.scrabble()).to(eq("ABC"))
+    expect(word.scrabble()).to(eq(["A", "B", "C"]))
   end
 
-  it("Splits string into an array")
 end

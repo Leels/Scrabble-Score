@@ -8,7 +8,8 @@ class Word
   end
 
   def scrabble
-    @word.upcase()
+    @word.upcase().chars
+
   end
 end
 
