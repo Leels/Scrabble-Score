@@ -1,4 +1,5 @@
 require ('rspec')
+require ('pry')
 require ('scrabble_score')
 
 describe ('scrabble_score') do
@@ -14,7 +15,8 @@ describe ('scrabble_score') do
 
   it("Splits string into an all uppercase array") do
     word = Word.new("Abc")
-    expect(word.scrabble()).to(eq(["A", "B", "C"]))
+    expect(word.scrabble()).to(eq([1, 3, 3]))
   end
+
 
 end
