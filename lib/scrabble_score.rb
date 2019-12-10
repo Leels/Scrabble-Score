@@ -1,6 +1,15 @@
-class Scrabble
-  def scrabble_score(word)
-    A, E, I, O, U, L, N, R, S, T = [1] * 10
+class Word
+  def initialize(word)
+    @word = word
   end
 
+  def word
+    @word
+  end
+
+  def scrabble
+    @word.upcase()
+  end
 end
+
+# word = Word.new()
